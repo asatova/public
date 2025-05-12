@@ -1,0 +1,213 @@
+// ============================================
+// ==========   Hero
+// ============================================
+.hero
+    background-size: cover
+    height: 650px
+    .container
+        display: flex
+        height: 100%
+        flex-direction: column
+        justify-content: center
+    &::before
+        content: ""
+        display: block
+        position: absolute
+        top: 0
+        left: 0
+        right: 0
+        bottom: 0
+        z-index: 0
+        width: 100%
+        height: 100%
+        background: rgba(0,0,0,.8)
+    h1
+        color: $w
+        font-size: 58px
+        font-style: normal
+        font-weight: 700
+        line-height: normal
+        span.green
+            color: $green
+        span.orange
+            color: $orange
+    p
+        margin: 20px 0 40px
+        max-width: 500px
+
+
+// ============================================
+// ==========   Mini about
+// ============================================
+.desc
+    padding: 50px 0
+    .container
+        display: grid
+        grid-template-columns: 0.7fr 1.3fr
+        grid-gap: 80px
+        align-items: center
+    &__media
+        height: 100% 
+        img
+            border-top-left-radius: 60px
+            border-bottom-right-radius: 60px
+            height: 100%
+            width: 100%    
+    p
+        margin: 20px 0
+
+
+// ============================================
+// ==========   Categories
+// ============================================
+.cat
+    padding: 50px 0
+    &__list
+        display: flex
+        flex-wrap: wrap
+        justify-content: center
+        grid-gap: 50px
+    &__item
+        max-width: 30%
+        text-align: center
+        h3
+            margin: 15px 0 !important
+            font-size: 28px
+        p
+            font-size: 18px
+            line-height: 1.3
+    &__icon
+        width: 80px
+        height: 80px
+        +br(50%)
+        background: rgba($w, .25)
+        display: flex
+        align-items: center
+        justify-content: center
+        margin: 0 auto
+
+
+// ============================================
+// ==========   About
+// ============================================
+.about
+    padding: 50px 0
+    .container
+        display: grid
+        grid-template-columns: 0.7fr 1.3fr
+        grid-gap: 70px
+        align-items: center
+    &__media
+        height: 100%
+        img
+            border-top-left-radius: 60px
+            border-bottom-right-radius: 60px
+            height: 100%
+            object-fit: cover
+    p
+        margin-top: 20px
+
+
+// ============================================
+// ==========   What
+// ============================================
+.what
+    padding: 50px 0
+    .container
+        display: grid
+        grid-template-columns: 1.3fr 0.7fr 
+        grid-gap: 50px
+        align-items: center
+    &__media
+        height: 100%
+        img
+            border-top-left-radius: 60px
+            border-bottom-right-radius: 60px
+            height: 100%
+            object-fit: cover
+    p, a
+        margin-top: 20px
+
+
+// ============================================
+// ==========   Selection
+// ============================================
+.selection
+    padding: 100px 0
+    .container
+        display: grid
+        grid-template-columns: 0.7fr 1.3fr 
+        grid-gap: 70px
+        align-items: center
+    &__media
+        height: 100%
+        img
+            border-top-left-radius: 60px
+            border-bottom-right-radius: 60px
+            height: 100%
+            object-fit: cover
+    &__list
+        margin-top: 50px
+    &__item
+        padding: 35px 25px
+        position: relative
+        background: $w
+        color: $b
+        +br(50px)
+        font-size: 20px
+        font-weight: 400
+        margin-left: 50px
+        margin-bottom: 50px
+        &:nth-child(odd) span
+            background: $lgreen
+        &:nth-child(odd) span::before
+            border-color: $lgreen transparent transparent transparent
+        p
+            margin-left: 100px
+        span
+            font-size: 45px
+            font-style: normal
+            font-weight: 700
+            line-height: normal
+            position: absolute
+            top: 50%
+            left: -50px
+            transform: translateY(-50%)
+            background: $lgreen2
+            color: $w
+            +br(50%)
+            padding: 40px
+            &::before
+                content: ''
+                position: absolute
+                top: 31%
+                right: -50px
+                width: 0
+                height: 0
+                border-style: solid
+                border-width: 50px 50px 0 50px
+                border-color: $lgreen2 transparent transparent transparent
+                transform: rotate(-90deg)
+
+
+// ============================================
+// ==========   Reviews
+// ============================================
+.reviews
+    padding: 120px 0
+    .swiper
+        overflow: inherit
+    .swiper-slide
+        background: $w
+        padding: 40px 40px 60px 40px
+        +br(16px)
+        height: 250px
+    &__slider
+        margin-top: 50px
+        color: $gray
+    &__name
+        font-size: 21px
+        font-style: normal
+        font-weight: 400
+        line-height: 31px
+        margin-bottom: 10px

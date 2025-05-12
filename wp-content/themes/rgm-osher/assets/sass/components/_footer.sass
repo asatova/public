@@ -1,0 +1,70 @@
+.contacts
+    padding: 100px 0
+    .container
+        display: grid
+        grid-template-columns: 1fr 1fr
+        grid-gap: 40px
+        align-items: center
+    &__list
+        margin-top: 20px
+        font-size: 18px
+    &__item
+        display: flex
+        margin-bottom: 10px
+        &:last-child
+            margin-bottom: 0
+        a
+            color: $w
+            display: inline-block
+            margin-left: 10px
+            +semi
+            font-weight: 700
+            transition: color .4s ease
+            &:hover
+                color: $orange
+        address
+            font-style: normal
+    &__bh
+        margin-top: 50px
+        &--title
+            font-size: 35px
+            font-style: normal
+            font-weight: 700
+            +semi
+            margin-bottom: 15px
+        &--list li
+            margin-bottom: 15px
+            font-size: 18px
+            &:last-child
+                margin-bottom: 0
+        &--list span
+            color: $orange
+            font-weight: 700
+            +semi
+
+.map
+    img
+        +br(10px)
+
+.footer
+    padding: 40px 0
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+    .logo img
+        max-width: 75%
+    ul
+        display: flex
+        grid-gap: 30px
+        li
+            &.current_page_item a
+                color: $green
+        a
+            color: $w
+            font-size: 18px
+            transition: color .2s ease
+            &:hover
+                color: $green
+    &__bottom
+        margin-top: 15px

@@ -1,0 +1,77 @@
+body
+	+reg
+	font-size: 16px
+	overflow-x: hidden !important
+	min-width: 320px
+	color: $w
+	background: $gray
+	&.overflow
+		overflow: hidden
+
+.overlay
+	width: 100%
+	height: 100%
+	position: fixed
+	top: 0
+	left: 0
+	background-color: rgba(0,0,0,.3)
+	z-index: 101
+	display: none
+
+[none]
+	display: none !important
+	visibility: hidden
+
+.container
+	max-width: 1440px
+	padding: 0 100px
+	width: 100%
+	margin: 0 auto
+	position: relative
+
+h2.section-title
+	font-size: 46px
+	font-style: normal
+	font-weight: 700
+	line-height: normal
+p.desc-text
+	font-size: 18px
+	font-style: normal
+	font-weight: 400
+	line-height: 1.4
+
+.btn
+	display: inline-block
+	+reg
+	font-size: 20px
+	padding: 10px 30px
+	cursor: pointer
+	text-align: center
+
+.btn-green
+	+br(25px)
+	max-width: 200px
+	transition: background .4s ease, transform .4s ease
+	background: $green
+	color: $w
+	&:hover
+		background: $lgreen
+		transform: scale(1.02)
+
+.btn-orange
+	background: $orange
+	color: $w
+	transition: border-radius .4s ease, transform .4s ease
+	+br(0)
+	&:hover
+		transform: scale(1.02)
+		+br(20px)
+
+.bg-lgreen
+	background: $lgreen
+
+.bg-gray
+	background: $gray2
+
+.bg-orange
+	background: $orange

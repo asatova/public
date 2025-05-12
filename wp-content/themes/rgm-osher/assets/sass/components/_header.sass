@@ -1,0 +1,30 @@
+header
+    position: relative
+    padding: 20px 0
+    background: $gray
+    width: 100%
+
+    .container
+        display: flex
+        align-items: center
+        justify-content: space-between
+
+    ul
+        display: flex
+        align-items: center
+        grid-gap: 30px
+        li
+            display: inline-block
+            &:last-child
+                a
+                    color: $w
+                    background: $orange
+                    padding: 7px 20px
+                    +br(23px)
+        a
+            color: $w
+            display: inline-block
+            font-size: 18px
+            transition: color .2s ease
+            &:hover
+                color: $green
